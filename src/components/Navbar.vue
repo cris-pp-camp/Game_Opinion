@@ -1,8 +1,6 @@
-//    がんばれ!  🌻
-
 <template>
     <nav>
-        <img src="@/assets/lightIcon.png" alt="Icon">
+        <h1>Game Opinion</h1>
         <router-link to="/"><i class="fa-solid fa-house"></i></router-link>
     </nav>
 </template>
@@ -26,26 +24,26 @@ export default {
 </script>
 
 <style scoped>
+
+
     nav{
+        background-color: #1a202c;
         height: 8vh;
         padding: 1vh 5vw;
         display: flex;
         justify-content: space-between;
-        background: #1c1c1c;
         align-items: center;
     }
 
+    h1{
+        font-size: 2rem;
+        justify-content: left;
+        color: greenyellow;
+    }
     nav a {
-        font-weight: bold;
-        text-decoration: none;
-        color: #daff7290;
+        color: greenyellow;
+        transform: scale(2);
     }
 
-    nav a.router-link-exact-active {
-        color: #daff7220;
-    }
 
-    nav img{
-        height: 90%;
-    }
 </style>

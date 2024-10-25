@@ -1,4 +1,4 @@
-# gg_project
+# game_opinion
 
 ## Project setup
 ```

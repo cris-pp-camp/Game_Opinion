@@ -1,9 +1,7 @@
-//    がんばれ!  🌻
-
 <template>
     <main>
 
-        <h1><i class="fa-solid fa-exclamation"></i></h1>
+        <h1><i class="fa-solid fa-circle-exclamation"></i></h1>
         <h2>404</h2>
         <h4>Page Not Found</h4>
 
@@ -57,6 +55,7 @@ export default {
         border-radius: 5px;
         padding: .2rem .8rem;
         transition: border 1s;
+        transform: scale(2);
     }
 
     button:hover{

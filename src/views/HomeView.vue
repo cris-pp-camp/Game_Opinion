@@ -1,14 +1,13 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Game Grades"/>
+    <HelloWorld msg="Game Opinion"/>
     <Cards/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-import Cards from '@/components/Cards.vue'
+import Cards from '@/components/Cards.vue';
+import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
   name: 'HomeView',

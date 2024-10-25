@@ -1,5 +1,5 @@
 {
-  "name": "gg_project",
+  "name": "game_opinion",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "game_opinion": "file:",
+    "lucide-vue": "^0.453.0",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1"
   },

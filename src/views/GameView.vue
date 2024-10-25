@@ -14,7 +14,7 @@
             
                      <div class="grades_button">
                 <button id="gradesButton" @click="hideButton">
-                    See grades
+                    Ver Opiniones
                 </button>
             </div>
         </router-link>

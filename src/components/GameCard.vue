@@ -1,5 +1,3 @@
-//    がんばれ!  🌻
-
 <template>
     <div class="container">
 

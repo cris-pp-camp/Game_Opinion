@@ -1,5 +1,3 @@
-//    がんばれ!  🌻
-
 <template>
     <main>
       <div class="card" v-for="game in games" :key="game.id">
@@ -9,7 +7,7 @@
             <i class="fa-solid fa-star"></i>
             {{ game.rating }}
         </h4>
-        <button @click="redirectTo(game.id)">Rate game</button>
+        <button @click="redirectTo(game.id)">Opinar</button>
       </div>
     </main>
 </template>

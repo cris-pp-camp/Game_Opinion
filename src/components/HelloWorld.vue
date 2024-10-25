@@ -1,10 +1,6 @@
 <template>
   <div class="hello">
-
-    <!-- Welcoming -->
-    <h1>{{ msg }}</h1>
-    <p>Sit amet consectetur adipisicing elit. Laborum, quasi. Nihil nulla alias harum facere, adipisci, amet delectus doloribus assumenda a accusamus veniam nisi ullam expedita.</p>
-
+    <p>Bienvenido a Game Opinion, el lugar donde los gamers como tú pueden compartir sus experiencias, opiniones y recomendaciones sobre los últimos títulos. Ya sea que te gusten los juegos de acción, aventuras o estrategia, aquí encontrarás reseñas auténticas y discusiones apasionadas. ¡Únete a la conversación y descubre tu próximo juego favorito!</p>
   </div>
 </template>
 
@@ -17,7 +13,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 .hello{
@@ -26,11 +21,11 @@ export default {
 }
 
 h1{
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 2rem 0;
 }
 
-a {
-  color: #fdb489;
+p{
+  font-size: 1.2rem;
 }
 </style>

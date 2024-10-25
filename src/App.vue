@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
-import Footer from '@/components/Footer.vue'
+import Footer from '@/components/Footer.vue';
+import Navbar from '@/components/Navbar.vue';
 
 export default {
   components:{
@@ -26,7 +26,7 @@ export default {
 }
 
 body{
-  background: #1c1c1c;
+  background: #444444;
   font-size: 0.875rem;
 }
 
