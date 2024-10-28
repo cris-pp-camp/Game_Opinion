@@ -3,9 +3,8 @@
       <div class="card" v-for="game in games" :key="game.id">
         <img :src="game.background_image" alt="Game Poster">
         <h2 class="game_title">{{ game.name }}</h2>
-        <h4 class="game_title">
-            <i class="fa-solid fa-star"></i>
-            {{ game.rating }}
+        <h4 class="game_rating">
+            Rating: {{ game.rating }}
         </h4>
         <button @click="redirectTo(game.id)">Opinar</button>
       </div>
@@ -53,7 +52,7 @@ export default {
             console.log(gameData) },
 
         redirectTo(id){
-            this.$router.push('/game/' + id)
+            this.$router.push('/opiniones/' + id)
         }
     },
     // watch: {},
@@ -81,7 +80,7 @@ main{
 
 .card{
     padding: .7rem;
-    background: #222;
+    background: #1a202c;
     width: clamp(250px, 80%, 400px);
 }
 
@@ -91,14 +90,20 @@ main{
 }
 
 .game_title{
+    font-weight: bold;
+    margin: 1rem auto;
+    color: #daff72;
+}
+
+.game_rating{
+    font-weight: bold;
     margin: 1rem auto;
 }
 
-i{
-    font-size: smaller;
-}
+
 
 button{
+    transform: scale(1.5);
     cursor: pointer;
     border: 1px solid #daff7250;
     background: transparent;

@@ -1,9 +1,7 @@
 <template>
     <main>
 
-        <h1><i class="fa-solid fa-circle-exclamation"></i></h1>
-        <h2>404</h2>
-        <h4>Page Not Found</h4>
+        <img src="@/assets/404.png" alt="404">
 
         <router-link :to="{path:`/`}">
             <button>Home</button>
@@ -33,20 +31,18 @@ export default {
     main{
         margin: 5rem auto;
         color: transparent;
-        background: #daff72;
-        background: linear-gradient(160deg, #caff38 27%, #f2ffcd60 100%);
-        background-clip: text;
+
     }
 
-    h1{
-        font-size: 8rem;
-    }
-
-    h2{
-        font-size: 4rem;
+    img{
+        border-radius: 10px;
+        width: 50%;
+        margin: 0 auto;
+        display: block;
     }
 
     button{
+        
         margin-top: 2rem;
         cursor: pointer;
         border: 1px solid #daff7250;

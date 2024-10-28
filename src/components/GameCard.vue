@@ -4,11 +4,10 @@
         <div class="left">
             
             <img :src="image" alt="">
-            <h1 class="name_mobile">{{ name }}</h1>
+            <h1 class="name_game">{{ name }}</h1>
         </div>
 
         <div class="right">
-            <h1 class="name_desk">{{ name }}</h1>
 
             <h6>Released: {{ date }}</h6>
             
@@ -19,8 +18,7 @@
             </div>
 
             <div class="rating">
-                <i class="fa-solid fa-star"></i>
-                <h2>{{ rate }}</h2>
+                <h2> Rating: {{ rate }}</h2>
             </div>
 
         </div>
@@ -76,7 +74,7 @@ export default {
 
 <style scoped>
     .container{
-        width: clamp(310px, 60%, 900px);
+        width: clamp(250px, 90%, 400px);
         margin: 2rem auto;
         padding: .5rem 1rem;
         border-radius: 5px;
@@ -84,6 +82,7 @@ export default {
         flex-direction: column;
         background: #222;
     }
+
 
     .left{
         color: #daff72;
@@ -97,7 +96,7 @@ export default {
         width: 100%;
         margin: 1rem auto;
         border-radius: 5px;
-        mask-image: linear-gradient(0deg, rgba(34,34,34,0) 0%, rgba(34,34,34,0.6728538283062645) 73%, rgba(34,34,34,1) 98%);
+
     }
 
     .description{
@@ -123,13 +122,13 @@ export default {
         height: 1rem;
     }
 
-    i{
-        font-size: .8rem;
-        margin-left: .5rem;
-    }
 
-    .name_desk{
-        display: none;
+    .button{
+        margin: 10 0 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 </style>

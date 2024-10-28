@@ -1,5 +1,3 @@
-//    がんばれ!  🌻
-
 <template>
     <main>
 
@@ -10,7 +8,7 @@
                   :platforms="this.platforms"
                   :description="this.description" />
 
-        <router-link :to="{path:`/game/${this.id}/grades`}">
+        <router-link :to="{path:`/opiniones/${this.id}/grades`}">
             
                      <div class="grades_button">
                 <button id="gradesButton" @click="hideButton">
@@ -108,6 +106,7 @@ export default {
     }
 
     button{
+        margin-top: 2rem;
         cursor: pointer;
         border: 1px solid #daff7250;
         background: transparent;
@@ -115,6 +114,7 @@ export default {
         border-radius: 5px;
         padding: .2rem .8rem;
         transition: border 1s;
+        transform: scale(1.5);
     }
 
     button:hover{

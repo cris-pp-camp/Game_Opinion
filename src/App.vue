@@ -26,7 +26,7 @@ export default {
 }
 
 body{
-  background: #444444;
+  background: #1a202c;
   font-size: 0.875rem;
 }
 

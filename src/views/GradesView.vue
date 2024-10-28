@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div>
-            <h4 id="alert" v-if="alert">This game hasn't been graded yet.</h4>
+            <h4 id="alert" v-if="alert">No existen opiniones para mostrar</h4>
         </div>
 
         <div class="users_grades" id="grade">
@@ -33,7 +33,7 @@
             </form>
         </div>
 
-        <button @click="showForm(); hideButtonAddGrade();" v-if="buttonToAddGrade">Add grade</button>
+        <button @click="showForm(); hideButtonAddGrade();" v-if="buttonToAddGrade">Añadir opinión</button>
 
     </div>
 </template>
@@ -92,7 +92,7 @@ export default {
 
     #alert{
         border: 1px solid #d9ff7265;
-        width: 70%;
+        width: 50%;
         border-radius: 5px;
         padding: .5rem;
     }
@@ -112,7 +112,7 @@ export default {
         padding: .2rem .8rem;
         transition: border 1s;
         margin: 0 .3rem;
-    }
+        transform: scale(1.5);    }
 
     button:hover{
         border: 1px solid #eaffaf;
